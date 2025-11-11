@@ -14,25 +14,28 @@ const Header = () => {
   }, []);
   const navItems = [{
     label: "Início",
-    href: "#hero"
+    href: "/#hero"
   }, {
     label: "Sobre",
-    href: "#sobre"
+    href: "/#sobre"
   }, {
     label: "Serviços",
-    href: "#servicos"
+    href: "/#servicos"
   }, {
     label: "Planos",
-    href: "#planos"
+    href: "/#planos"
+  }, {
+    label: "Vitrine",
+    href: "/vitrine"
   }, {
     label: "Contato",
-    href: "#contato"
+    href: "/#contato"
   }];
   return <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-background/95 backdrop-blur-md shadow-md" : "bg-background/80 backdrop-blur-sm"}`}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="#hero" className="flex items-center gap-3">
+          <a href="/" className="flex items-center gap-3">
             <img src={logo} alt="AFP Soluções Industriais" className="h-32 sm:h-36 md:h-40 lg:h-48 w-auto" />
           </a>
 
