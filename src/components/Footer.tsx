@@ -1,4 +1,5 @@
 import { Building2, Mail, Phone, Clock, MapPin } from "lucide-react";
+import logo from "@/assets/logo-afp.png";
 
 const Footer = () => {
   const scrollToSection = (id: string) => {
@@ -20,9 +21,8 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mb-6 sm:mb-8">
           {/* Coluna 1: Sobre */}
           <div>
-            <div className="flex items-center gap-2 mb-3 sm:mb-4">
-              <Building2 className="h-5 w-5 sm:h-6 sm:w-6 text-accent" />
-              <h3 className="text-lg sm:text-xl font-bold">AFP Soluções Industriais</h3>
+            <div className="flex items-center gap-3 mb-3 sm:mb-4">
+              <img src={logo} alt="AFP Soluções Industriais" className="h-12 sm:h-16 w-auto" />
             </div>
             <p className="text-primary-foreground/80 mb-3 sm:mb-4 text-sm sm:text-base">
               Onde o trabalho se torna missão.
