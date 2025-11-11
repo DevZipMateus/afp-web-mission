@@ -22,7 +22,9 @@ const Footer = () => {
           {/* Coluna 1: Sobre */}
           <div>
             <div className="flex items-center gap-3 mb-3 sm:mb-4">
-              <img src={logo} alt="AFP Soluções Industriais" className="h-12 sm:h-16 w-auto" />
+              <div className="bg-white rounded-full p-3 sm:p-4">
+                <img src={logo} alt="AFP Soluções Industriais" className="h-16 sm:h-20 md:h-24 w-auto" />
+              </div>
             </div>
             <p className="text-primary-foreground/80 mb-3 sm:mb-4 text-sm sm:text-base">
               Onde o trabalho se torna missão.
