@@ -3,6 +3,9 @@ import Header from "@/components/Header";
 
 const Vitrine = () => {
   useEffect(() => {
+    // Trava a rolagem do body
+    document.body.style.overflow = 'hidden';
+    
     // Carrega o script do badge MonteSite
     const script = document.createElement('script');
     script.src = 'https://vaabpicspdbolvutnscp.supabase.co/functions/v1/get-footer-iframe';
@@ -10,6 +13,8 @@ const Vitrine = () => {
     document.body.appendChild(script);
 
     return () => {
+      // Restaura a rolagem do body ao desmontar
+      document.body.style.overflow = 'unset';
       // Limpa o script ao desmontar
       document.body.removeChild(script);
     };
