@@ -36,18 +36,18 @@ const Services = () => {
   ];
 
   return (
-    <section id="servicos" className="py-20 bg-background">
-      <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+    <section id="servicos" className="py-12 sm:py-16 md:py-20 bg-background">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-3xl mx-auto text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4 sm:mb-6">
             Nossos serviços
           </h2>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed">
             Soluções completas em metalurgia industrial para empresas que exigem qualidade, segurança e durabilidade
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-20">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16 md:mb-20">
           {services.map((service, index) => (
             <Card
               key={index}
@@ -75,11 +75,11 @@ const Services = () => {
           ))}
         </div>
 
-        <div className="max-w-5xl mx-auto bg-secondary rounded-2xl p-8 md:p-12">
-          <h3 className="text-3xl font-bold text-center text-foreground mb-10">
+        <div className="max-w-5xl mx-auto bg-secondary rounded-2xl p-6 sm:p-8 md:p-12">
+          <h3 className="text-2xl sm:text-3xl font-bold text-center text-foreground mb-8 sm:mb-10">
             Produtos fabricados
           </h3>
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
             {products.map((product, index) => (
               <div
                 key={index}

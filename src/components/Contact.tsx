@@ -29,18 +29,18 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contato" className="py-20 bg-background">
-      <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+    <section id="contato" className="py-12 sm:py-16 md:py-20 bg-background">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-3xl mx-auto text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4 sm:mb-6">
             Entre em contato
           </h2>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed">
             Estamos prontos para atender sua empresa com soluções industriais de qualidade
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-12">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 max-w-4xl mx-auto mb-8 sm:mb-12">
           {contactInfo.map((item, index) => (
             <Card key={index} className="border-none shadow-md">
               <CardContent className="p-6">
@@ -73,10 +73,10 @@ const Contact = () => {
           <Button
             asChild
             size="lg"
-            className="text-lg px-8 py-6"
+            className="text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 w-full sm:w-auto"
           >
             <a href="https://wa.me/5565999098353" target="_blank" rel="noopener noreferrer">
-              <MessageCircle className="mr-2 h-5 w-5" />
+              <MessageCircle className="mr-2 h-4 sm:h-5 w-4 sm:w-5" />
               Falar no WhatsApp
             </a>
           </Button>

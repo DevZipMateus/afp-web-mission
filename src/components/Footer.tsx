@@ -16,25 +16,25 @@ const Footer = () => {
 
   return (
     <footer className="bg-primary text-primary-foreground">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10 md:py-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mb-6 sm:mb-8">
           {/* Coluna 1: Sobre */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <Building2 className="h-6 w-6 text-accent" />
-              <h3 className="text-xl font-bold">AFP Soluções Industriais</h3>
+            <div className="flex items-center gap-2 mb-3 sm:mb-4">
+              <Building2 className="h-5 w-5 sm:h-6 sm:w-6 text-accent" />
+              <h3 className="text-lg sm:text-xl font-bold">AFP Soluções Industriais</h3>
             </div>
-            <p className="text-primary-foreground/80 mb-4">
+            <p className="text-primary-foreground/80 mb-3 sm:mb-4 text-sm sm:text-base">
               Onde o trabalho se torna missão.
             </p>
-            <p className="text-primary-foreground/80 text-sm">
+            <p className="text-primary-foreground/80 text-xs sm:text-sm">
               Soluções completas em estruturas metálicas, serralheria industrial e manutenção técnica.
             </p>
           </div>
 
           {/* Coluna 2: Links Rápidos */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Navegação</h3>
+            <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">Navegação</h3>
             <nav className="flex flex-col gap-2">
               <button
                 onClick={() => scrollToSection("inicio")}
@@ -71,7 +71,7 @@ const Footer = () => {
 
           {/* Coluna 3: Contato */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Contato</h3>
+            <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">Contato</h3>
             <div className="flex flex-col gap-3">
               <a
                 href="https://wa.me/5565999098353"
@@ -102,10 +102,10 @@ const Footer = () => {
         </div>
 
         {/* Linha divisória */}
-        <div className="border-t border-primary-foreground/20 pt-6">
-          <div className="text-center text-primary-foreground/60 text-sm">
+        <div className="border-t border-primary-foreground/20 pt-4 sm:pt-6">
+          <div className="text-center text-primary-foreground/60 text-xs sm:text-sm">
             <p>© {new Date().getFullYear()} AFP Soluções Industriais - CNPJ: 53.671.791/0001-48</p>
-            <p className="mt-2">Todos os direitos reservados.</p>
+            <p className="mt-1 sm:mt-2">Todos os direitos reservados.</p>
           </div>
         </div>
       </div>

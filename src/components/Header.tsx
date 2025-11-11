@@ -33,7 +33,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <a href="#hero" className="flex items-center gap-3">
-            <img src={logo} alt="AFP Soluções Industriais" className="h-48 w-auto" />
+            <img src={logo} alt="AFP Soluções Industriais" className="h-12 sm:h-16 md:h-20 lg:h-24 w-auto" />
           </a>
 
           {/* Desktop Navigation */}

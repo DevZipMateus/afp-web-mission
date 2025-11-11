@@ -9,18 +9,18 @@ const About = () => {
   ];
 
   return (
-    <section id="sobre" className="py-20 bg-secondary">
-      <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+    <section id="sobre" className="py-12 sm:py-16 md:py-20 bg-secondary">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4 sm:mb-6">
             Sobre nós
           </h2>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed">
             A AFP Soluções Industriais nasceu em Cuiabá, em 2025, movida por coragem, fé e o desejo de recomeçar. O nome AFP carrega uma homenagem à família e ao legado deixado pelo avô de Alexandre, Sr. Dilermano Miranda Penteado, que iniciou o caminho no setor industrial.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 mb-16">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 mb-12 sm:mb-16">
           <Card className="border-none shadow-lg">
             <CardContent className="p-8">
               <div className="flex items-center gap-3 mb-4">
@@ -51,10 +51,10 @@ const About = () => {
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <h3 className="text-3xl font-bold text-center text-foreground mb-10">
+          <h3 className="text-2xl sm:text-3xl font-bold text-center text-foreground mb-8 sm:mb-10">
             Nossos valores
           </h3>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
             {values.map((value, index) => (
               <div
                 key={index}
